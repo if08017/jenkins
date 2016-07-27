@@ -11,6 +11,8 @@ username/password: vagrant/vagrant, root/admin710
 ports : 22, 8080
 Packages : Java7, Tomcat7, MySQL5.5
 ```
+##Flow
+![Diff without whitespace](https://s3-ap-southeast-1.amazonaws.com/dimo-devops/public/Screen+Shot+2016-07-26+at+5.14.10+PM.png)
 
 ## Execute
 1 Install VirtualBox
@@ -26,7 +28,7 @@ https://www.vagrantup.com/downloads.html
 mkdir -p dpp
 cd dpp
 ```
-4 [Vagrant script] (https://github.com/dimopay/devops.git) - https://github.com/dimopay/devops.git
+4 [Vagrant script] - https://github.com/dimopay/devops.git
 ```
 git clone https://github.com/dimopay/devops.git
 cd devops
@@ -54,9 +56,9 @@ vagrant ssh -c runTomcat
 ```
 
 ## Optional resource
-- [OS NAS internal] - 172.19.1.212/public/DevOps/@software/trusty64_kvm.box (optional)
-- [OS Vagrant-hub] (https://atlas.hashicorp.com/if08017/boxes/ubuntutrusty64) - https://atlas.hashicorp.com/if08017/boxes/ubuntutrusty64
-- [DPP] (http://ec2-52-77-227-130.ap-southeast-1.compute.amazonaws.com/view/02/job/dppGetCode02/ws/target/DPP.war) - http://ec2-52-77-227-130.ap-southeast-1.compute.amazonaws.com/view/02/job/dppGetCode02/ws/target/DPP.war
+- [OS NAS internal] - 172.19.1.212/public/DevOps/@software/trusty64_kvm.box
+- [OS Vagrant-hub] - https://atlas.hashicorp.com/if08017/boxes/ubuntutrusty64
+- [DPP] - http://ec2-52-77-227-130.ap-southeast-1.compute.amazonaws.com/view/02/job/dppGetCode02/ws/target/DPP.war
 
 ## Results environment
 ```
