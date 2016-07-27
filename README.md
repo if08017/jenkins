@@ -11,44 +11,44 @@ username/password: vagrant/vagrant, root/admin710
 ports : 22, 8080
 Packages : Java7, Tomcat7, MySQL5.5
 ```
-~~~
+
 ## Execute
-1. Install VirtualBox
+1 Install VirtualBox
 ```
 https://www.virtualbox.org/wiki/Downloads
 ```
-2. Install Vagrant
+2 Install Vagrant
 ```
 https://www.vagrantup.com/downloads.html
 ```
-3. Create folder
+3 Create folder
 ```
 mkdir -p dpp
 cd dpp
 ```
-4. [Vagrant] (https://github.com/dimopay/devops.git) - https://github.com/dimopay/devops.git
+4 [Vagrant script] (https://github.com/dimopay/devops.git) - https://github.com/dimopay/devops.git
 ```
 git clone https://github.com/dimopay/devops.git
 cd devops
 ```
-5. Deploy environment
+5 Deploy environment
 ```
 vagrant up
 ```
-6. Remove provision
+6 Remove provision
 ```
 vagrant ssh
 ```
-7. Access DPP App
+7 Access DPP App
 ```
 http://192.168.10.24:8080/DPP
 usernmae : admin
 password : 123456
 ```
-~~~
-## Run manual after shutdown
 
+## Manual run after shutdown
 ```
+vagrant up
 vagrant ssh -c runDatabase
 vagrant ssh -c runTomcat
 ```
@@ -67,8 +67,6 @@ OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)
 ```
 mysql  Ver 14.14 Distrib 5.5.50, for debian-linux-gnu (x86_64) using readline 6.3
 ```
-
-File path
 ```
 .war : devops/2.dppForDeveloper/ubuntu/tomcat7/webapps/
 database : devops/2.dppForDeveloper/ubuntu/db/
