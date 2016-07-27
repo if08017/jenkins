@@ -11,7 +11,7 @@ username/password: vagrant/vagrant, root/admin710
 ports : 22, 8080
 Packages : Java7, Tomcat7, MySQL5.5
 ```
-
+~~~
 ## Execute
 1. Install VirtualBox
 ```
@@ -45,7 +45,7 @@ http://192.168.10.24:8080/DPP
 usernmae : admin
 password : 123456
 ```
-
+~~~
 ## Run manual after shutdown
 
 ```
