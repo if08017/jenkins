@@ -4,53 +4,59 @@
 # DPP application
 > For developer environment
 
-Element in DPP application include : Java7, Tomcat7, MySQL5.5
-
+Elements in DPP application include : 
+```
+IP OS : 192.168.10.20
+username/password: vagrant/vagrant, root/admin710
+ports : 22, 8080
+Packages : Java7, Tomcat7, MySQL5.5
+```
 
 ## Execute
-Create folder
+1. Install VirtualBox
+```
+https://www.virtualbox.org/wiki/Downloads
+```
+2. Install Vagrant
+```
+https://www.vagrantup.com/downloads.html
+```
+3. Create folder
 ```
 mkdir -p dpp
 cd dpp
 ```
-- [Vagrant] (https://github.com/dimopay/devops.git) - https://github.com/dimopay/devops.git
+4. [Vagrant] (https://github.com/dimopay/devops.git) - https://github.com/dimopay/devops.git
 ```
 git clone https://github.com/dimopay/devops.git
+cd devops
 ```
-- [OS Vagrant-hub] (https://atlas.hashicorp.com/if08017/boxes/ubuntutrusty64) - https://atlas.hashicorp.com/if08017/boxes/ubuntutrusty64
-```
-vagrant init if08017/ubuntutrusty64; vagrant up --provider virtualbox
-```
-
-## Execute 
-Create folder
-```
-mkdir -p dpp
-```
-
+5. Deploy environment
 ```
 vagrant up
 ```
-
-## Optional resource
-- [OS NAS internal] - 172.19.1.212/public/DevOps/@software/trusty64_kvm.box (optional)
-- [DPP] (http://ec2-52-77-227-130.ap-southeast-1.compute.amazonaws.com/view/02/job/dppGetCode02/ws/target/DPP.war) - http://ec2-52-77-227-130.ap-southeast-1.compute.amazonaws.com/view/02/job/dppGetCode02/ws/target/DPP.war
-
-Access DPP App
+6. Remove provision
+```
+vagrant ssh
+```
+7. Access DPP App
 ```
 http://192.168.10.24:8080/DPP
 usernmae : admin
 password : 123456
 ```
 
-Pengelolahan
--
-Untuk menjalankan secara manual
+## Run manual after shutdown
+
 ```
 vagrant ssh -c runDatabase
 vagrant ssh -c runTomcat
 ```
 
+## Optional resource
+- [OS NAS internal] - 172.19.1.212/public/DevOps/@software/trusty64_kvm.box (optional)
+- [OS Vagrant-hub] (https://atlas.hashicorp.com/if08017/boxes/ubuntutrusty64) - https://atlas.hashicorp.com/if08017/boxes/ubuntutrusty64
+- [DPP] (http://ec2-52-77-227-130.ap-southeast-1.compute.amazonaws.com/view/02/job/dppGetCode02/ws/target/DPP.war) - http://ec2-52-77-227-130.ap-southeast-1.compute.amazonaws.com/view/02/job/dppGetCode02/ws/target/DPP.war
 
 ## Results environment
 ```
