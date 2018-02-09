@@ -13,9 +13,9 @@ pipeline {
             sh 'echo \'jelo\''
           }
         }
-        stage('') {
+        stage('error') {
           steps {
-            sh 'echo \'jelo\''
+            sh 'echoe \'jelo\''
           }
         }
       }
@@ -32,7 +32,7 @@ pipeline {
             sh 'echo \'jelo\''
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             sh 'echo \'jelo\''
           }
