@@ -13,9 +13,9 @@ pipeline {
             sh 'echo \'jelo\''
           }
         }
-        stage('error') {
+        stage('erroradasdad') {
           steps {
-            sh 'echo \'jel . jnknk knknko\''
+            sh 'echdo \'jel . jnknk knknko\''
           }
         }
       }
