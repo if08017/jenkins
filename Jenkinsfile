@@ -22,21 +22,26 @@ pipeline {
     }
     stage('dadsasda') {
       steps {
-        sh 'echo \'jelo\''
+        sh 'echo \'jelasdmasmdlmasdlasdo\''
       }
     }
     stage('asdadasda') {
       parallel {
         stage('asdadasda') {
           steps {
-            sh 'echo \'jelo\''
+            sh 'echo \'jedaasdasda adasd ad adsalo\''
           }
         }
-        stage('error') {
+        stage('oasdjaodja') {
           steps {
-            sh 'echo \'jelo\''
+            sh 'echo \'jesssslo\''
           }
         }
+      }
+    }
+    stage('lamper') {
+      steps {
+        sh 'echo \'oasjdasd adsas \''
       }
     }
   }
