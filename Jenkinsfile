@@ -41,7 +41,7 @@ pipeline {
     }
     stage('lamper') {
       steps {
-        sh 'echo \'oasjdasd adsas \''
+        sh 'echo \'oasjdasd adsas\''
       }
     }
   }
