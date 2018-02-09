@@ -15,7 +15,7 @@ pipeline {
         }
         stage('error') {
           steps {
-            sh 'echoe \'jelo\''
+            sh 'echo \'jel . jnknk knknko\''
           }
         }
       }
