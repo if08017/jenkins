@@ -15,7 +15,7 @@ pipeline {
         }
         stage('erroradasdad') {
           steps {
-            sh 'echdo \'jel . jnknk knknko\''
+            sh 'echo \'jel . jnknk knknko\''
           }
         }
       }
