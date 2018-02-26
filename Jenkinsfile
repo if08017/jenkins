@@ -1,6 +1,11 @@
 pipeline {
   agent any
   stages {
+    stage('Update Package') {
+      steps {
+        sh 'echo \'jesssslo\''
+      }
+    }
     stage('UAT') {
       parallel {
         stage('Findbug - Spotbugs') {
@@ -18,11 +23,6 @@ pipeline {
             sh 'echo \'jel . jnknk knknko\''
           }
         }
-      }
-    }
-    stage('Update Package') {
-      steps {
-        sh 'echo \'jesssslo\''
       }
     }
     stage('SIT') {
