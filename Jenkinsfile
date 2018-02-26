@@ -32,11 +32,6 @@ pipeline {
             sh 'ls -al'
           }
         }
-        stage('Image scanner - Anchore') {
-          steps {
-            sh 'ls'
-          }
-        }
         stage('Newman runner') {
           steps {
             sh 'ls'
