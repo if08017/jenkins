@@ -25,9 +25,23 @@ pipeline {
         sh 'echo \'jesssslo\''
       }
     }
-    stage('Image scanner - Ancore') {
-      steps {
-        sh 'ls -al'
+    stage('SIT') {
+      parallel {
+        stage('SIT') {
+          steps {
+            sh 'ls -al'
+          }
+        }
+        stage('Image scanner - Anchore') {
+          steps {
+            sh 'ls'
+          }
+        }
+        stage('Newman runner') {
+          steps {
+            sh 'ls'
+          }
+        }
       }
     }
   }
