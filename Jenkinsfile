@@ -18,7 +18,7 @@ pipeline {
             sh 'echo \'jelo\''
           }
         }
-        stage('erroradasdad') {
+        stage('Publish result') {
           steps {
             sh 'echo \'jel . jnknk knknko\''
           }
@@ -35,6 +35,11 @@ pipeline {
         stage('Newman runner') {
           steps {
             sh 'ls'
+          }
+        }
+        stage('Publish result') {
+          steps {
+            sh 'ls -al'
           }
         }
       }
