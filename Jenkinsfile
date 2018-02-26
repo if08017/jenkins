@@ -27,7 +27,7 @@ pipeline {
     }
     stage('SIT') {
       parallel {
-        stage('SIT') {
+        stage('Image Scanner -  Anchore') {
           steps {
             sh 'ls -al'
           }
