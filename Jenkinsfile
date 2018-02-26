@@ -1,14 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('build') {
+    stage('UAT') {
       parallel {
-        stage('build') {
+        stage('Findbug - Spotbugs') {
           steps {
             sh 'echo \'build\''
           }
         }
-        stage('oiajsdadasda') {
+        stage('Dependecy check') {
           steps {
             sh 'echo \'jelo\''
           }
@@ -20,28 +20,14 @@ pipeline {
         }
       }
     }
-    stage('dadsasda') {
+    stage('Image scanner - Anchore') {
       steps {
-        sh 'echo \'jelasdmasmdlmasdlasdo\''
+        sh 'echo \'jesssslo\''
       }
     }
-    stage('asdadasda') {
-      parallel {
-        stage('asdadasda') {
-          steps {
-            sh 'echo \'jedaasdasda adasd ad adsalo\''
-          }
-        }
-        stage('oasdjaodja') {
-          steps {
-            sh 'echo \'jesssslo\''
-          }
-        }
-      }
-    }
-    stage('lamper') {
+    stage('Image scanner - Ancore') {
       steps {
-        sh 'echo \'oasjdasd adsas\''
+        sh 'ls -al'
       }
     }
   }
