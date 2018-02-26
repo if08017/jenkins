@@ -20,7 +20,7 @@ pipeline {
         }
       }
     }
-    stage('Image scanner - Anchore') {
+    stage('Update Package') {
       steps {
         sh 'echo \'jesssslo\''
       }
