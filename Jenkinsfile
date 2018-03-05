@@ -18,7 +18,7 @@ pipeline {
             sh 'echo \'jelo\''
           }
         }
-        stage('Publish result') {
+        stage('\u270B Publish result') {
           steps {
             sh 'echo \'jel . jnknk knknko\''
           }
