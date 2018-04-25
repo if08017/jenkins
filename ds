@@ -1,6 +1,9 @@
 import org.apache.commons.codec.binary.Hex;
 
 
+build-sit:
+    echo "Deploy for SIT"
+    ansible-playbook --vault-password-file ~/.vaultpassword -i sit build-sit.yml
 
 
 
