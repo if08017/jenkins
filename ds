@@ -1,0 +1,7 @@
+import org.apache.commons.codec.binary.Hex;
+String generateSecretToken() {
+    SecureRandom secRandom = new SecureRandom();
+    byte[] result = new byte[32];
+    secRandom.nextBytes(result);
+    return Hex.encodeHexString(result);
+}
